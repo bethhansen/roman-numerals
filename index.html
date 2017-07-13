@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.2.1.js"
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
@@ -10,11 +10,14 @@
     <title>Roman Numerals</title>
   </head>
   <body>
-    <div class="container-fluid">
-      <form class="romanNumeral">
+    <div class="container">
+      <form class="romanNumeral" class="form-control">
         <label for="">Enter your number to be converted to a Roman Numeral</label>
         <input id="input" type="text" name="name">
-        <button type="submit" name="button">Submit</button>
+        <button class="btn" type="submit" name="button">Submit</button>
+        <div class="numeralOutput">
+          <ul><span id="output"></span></ul>
+        </div><!--numeralOutput-->
       </form><!--romanNumeral-->
     </div><!--container-->
   </body>
